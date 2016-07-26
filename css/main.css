@@ -58,3 +58,23 @@ div{
     color: #C34208;
 
 }
+
+#div-principal{
+	background:rgba(235,235,205,0.7);
+	padding: 15px 30px;
+	height: 650px;
+	margin-top: 40px;
+	margin-left: 40px;
+	border-radius:4px;
+}
+
+#div-secundario{
+	background:rgba(235,235,205,0.7);
+	height: 650px;
+	margin-left: 150px;
+	margin-top: 40px;
+	border-radius:4px;
+}
+.div-form1{
+	margin-top: 10px;
+}

@@ -14,14 +14,13 @@
 	<nav class="row padding-largo nav-color text-center">
 		<ul class="no-lista">
 			<li class="col-md-4"><a href="index.php" class="pacifico color">My Blog</a></li>
-			<li class="col-md-4"><a href="" class="pacifico color">Mi Cuenta</a></li>
+			<li class="col-md-4"><a href="perfil.php" class="pacifico color">Mi Cuenta</a></li>
 			<div class="dropdown col-md-2 ">
 			<button class="btn dropdown-toggle pacifico color boton" type="button" data-toggle="dropdown">Iniciar Sesion
   				<span class="caret"></span></button>
   				<ul class="dropdown-menu">
 				    <li><a href="login.php">Iniciar sesion</a></li>
 				    <li><a href="module/logout.php">Cerrar sesion</a></li>
-				    <li><a href="#">About My Blog</a></li>
 				</ul>
 			
 			</div> 
