@@ -30,40 +30,31 @@ div{
 	padding-top: 20px;
 	padding-left: 10px;
 	width: 550px;
-	height: 400px;
+	height: 450px;
+    background:rgba(235,235,205,0.7);
+    border-radius:4px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .pacifico{
-	color: #C34208;
-
 	font-family: 'Pacifico';
 	font-size: 2em;
 }
-
-.errores{
-    -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius:10px;
-    -webkit-border-radius: 10px;
-    background: red;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    display: none;
-    font-size: 12px;
-    margin-top: -40px;
-    margin-left: 250px;
-    padding: 10px;
-    position: absolute;
+.color{
+    color: #C34208;
 }
-.errores:before{ /* Este es un truco para crear una flechita */
-    content: '';
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 8px solid #BC1010;
-    border-left: 8px solid transparent;
-    left: -16px;
-    position: absolute;
-    top: 5px;
+
+.boton{
+    background-color: #BF7E4C;
+
+}
+.form-control:focus, .form-control:focus + .fa{
+  border-color:#10CE88;
+  color:#10CE88;
+}
+#reg-btn{
+    background:#BF9056;
+    border-radius:4px;
+    color: #C34208;
+
 }
