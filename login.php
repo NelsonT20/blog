@@ -2,7 +2,7 @@
 <?php 
 	session_start();
 	if (isset($_SESSION['user'])) {
-		header('Location: index.php');
+		header('Location: perfil.php');
 	}
 ?>
 
@@ -22,8 +22,9 @@
 	<nav class="row padding-largo nav-color text-center">
 		<ul class="no-lista">
 			<li class="col-md-4"><a href="index.php" class="pacifico color">My Blog</a></li>
-			<li class="col-md-4"><a href="" class="pacifico color">Mi Cuenta</a></li>
-			<div class="dropdown col-md-2 ">
+
+
+			<div class="dropdown col-md-4 ">
 			<button class="btn dropdown-toggle pacifico color boton" type="button" data-toggle="dropdown">Iniciar Sesion
   				<span class="caret"></span></button>
   				<ul class="dropdown-menu">
@@ -32,7 +33,7 @@
 				</ul>
 			
 			</div> 
-			<li class="col-md-2"><a href="crear-usuario.php" class="pacifico color">Crear Cuenta</a></li>
+			<li class="col-md-4"><a href="crear-usuario.php" class="pacifico color">Crear Cuenta</a></li>
 		</ul>
 	</nav>
 	
@@ -42,7 +43,7 @@
 	</div>
 	<form action="module/singin.php" method="post">
 		<div class="login-form">
-	     <h1 class="color">Login</h1>
+	     <h1 class="color2">Login</h1>
 	     <div class="form-group ">
 	       <input type="text" class="form-control" placeholder="Username" required name="userName" id="UserName">
 	       <i class="fa fa-user"></i>

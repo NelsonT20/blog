@@ -11,16 +11,17 @@
 
 	if ($usersFinded->num_rows > 0) {
 		while ($row = $usersFinded->fetch_assoc()) {
-			if ($row['password'] == $pass) {
-				$_SESSION['user'] = $row['userName'];
-				$_SESSION['pass'] = $row['password'];
-				header('Location: ../index.php');
-			} else {
-				header('Location: ../login.php?mensaje=errorpass');
+				if ($row['password'] == $pass) {
+					$_SESSION['user'] = $row['userName'];
+					$_SESSION['pass'] = $row['password'];
+					header('Location: ../perfil.php?mensaje=hasiniciadosesion');
+					
+				} else {
+					header('Location: ../login.php?mensaje=errorpass');
+					}
 			}
-		}
-	} else {
-		header('Location: ../login.php?mensaje=erroruser');
+		} else {
+		header('Location: ../perfil.php?mensaje=erroruser');
 	}
 
  ?>

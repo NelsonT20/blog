@@ -14,8 +14,7 @@
 	<nav class="row padding-largo nav-color text-center">
 		<ul class="no-lista">
 			<li class="col-md-4"><a href="index.php" class="pacifico color">My Blog</a></li>
-			<li class="col-md-4"><a href="perfil.php" class="pacifico color">Mi Cuenta</a></li>
-			<div class="dropdown col-md-2 ">
+			<div class="dropdown col-md-4 ">
 			<button class="btn dropdown-toggle pacifico color boton" type="button" data-toggle="dropdown">Iniciar Sesion
   				<span class="caret"></span></button>
   				<ul class="dropdown-menu">
@@ -24,7 +23,7 @@
 				</ul>
 			
 			</div> 
-			<li class="col-md-2"><a href="crear-usuario.php" class="pacifico color">Crear Cuenta</a></li>
+			<li class="col-md-4"><a href="crear-usuario.php" class="pacifico color">Crear Cuenta</a></li>
 		</ul>
 	</nav>
 
@@ -33,46 +32,46 @@
 
 	</div>
 	<form action="module/registers.php" method="post" class="form-horizontal text-center crear1" name="form1">
-			<h2 class="color">Crear una cuenta</h2>
+			<h2 class="color2">Crear una cuenta</h2>
 		<div class="form-group">
-			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color">Ingrese su nickname</label>
+			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Ingrese su nickname</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="text" name="Nickname" class="form-control" required placeholder="Ingrese Su Nickname" maxlength="15">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color">Ingrese su nombre</label>
+			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Ingrese su nombre</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="text" name="Name" class="form-control" required placeholder="Ingrese su nombre" maxlength="15">
 			</div>
 		</div>
 		<div class="form-group">
-				<label class="col-lg-5 control-label col-xs-4 col-sm-4 color">Ingrese su apellido</label>
+				<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Ingrese su apellido</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="text" name="LastName" class="form-control" required placeholder="Ingrese su apellido" maxlength="15">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color">Email</label>
+			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Email</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="email" name="Email" class="form-control" required placeholder="Ingrese su email" maxlength="50">
 			</div>
 		</div>
 		<div class="form-group">
-		<label class="col-lg-5 control-label col-xs-4 col-sm-4 color">Escriba su contraseña</label>
+		<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Escriba su contraseña</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="password" name="Password" class="form-control" required placeholder="Ingrese su contraseña"maxlength="15">
 			</div>
 		</div>
 		<div class="form-group">
-		<label class="col-lg-5 control-label col-xs-4 col-sm-4 color">Repita su contraseña</label>
+		<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Repita su contraseña</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="password" name="RepeatPassword" class="form-control" required placeholder="Repita su contraseña" maxlength="15">
 			</div>
 		</div>
 		<div class="form-group">
 			<div class="col-lg-offset-5 col-lg-7 col-xs-4 col-sm-4" >
-		      <button type="submit" class="btn btn-default" id="reg-btn">Registrar</button>
+		      <button type="submit" class="btn btn-default" id="reg-btn">REGISTRAR</button>
 		    </div>
 		</div>
 

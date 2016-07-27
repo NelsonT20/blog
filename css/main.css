@@ -10,6 +10,7 @@ body{
 
 .nav-color{
 	background-color: #BF9056;
+	box-shadow: 2px 2px 5px #999;
 }
 
 .no-lista{
@@ -43,6 +44,9 @@ div{
 .color{
     color: #C34208;
 }
+.color2{
+	color: #0AC986;
+}
 
 .boton{
     background-color: #BF7E4C;
@@ -53,9 +57,9 @@ div{
   color:#10CE88;
 }
 #reg-btn{
-    background:#BF9056;
+    background:#0AC986;
     border-radius:4px;
-    color: #C34208;
+    color: #eee;
 
 }
 
@@ -77,4 +81,22 @@ div{
 }
 .div-form1{
 	margin-top: 10px;
+}
+#Fecha{
+	margin-top: 5px;
+	float: none;
+	margin-left: -15px;
+	width: 200px;
+	border-radius:4px;
+	box-shadow: 2px 2px 5px #999;
+}
+#postear{
+	background:#0AC986;
+    border-radius:4px;
+    color: #eee;
+	box-shadow: 2px 2px 5px #999;
+}
+.textarea{
+	box-shadow: 2px 2px 5px #999;
+	border-radius:4px;
 }
