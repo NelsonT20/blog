@@ -36,8 +36,8 @@
 
 		<div class="col-md-6" id="div-principal">
 			<form action="module/insert.php" method="post">
-				<input type="text" name="texto" maxlength="240" size="50" class="textarea">
-				
+				<input type="text" name="titulo" placeholder="Titulo">
+				<textarea name="texto" type="texto" maxlength="240" cols="48" rows="10" class="textarea"></textarea>
 				<div class="col-md-9">
 					<input type="date" name="fecha" id="Fecha" step="1" min="2016-01-01" max="2020-12-31" value="<?php echo date("Y-m-d");?>">
 				</div>
@@ -45,6 +45,7 @@
 					<button type="submit" class="btn btn-default" id="postear">COMENTAR</button>
 				</div>
 			</form>
+
 		</div>
 		<div class="col-md-4" id="div-secundario">
 			<h1 class="color2 pacifico text-center">My blog</h1> <br>
@@ -59,10 +60,14 @@
 		<script>
 			alert("Has iniciado sesion");
 		</script>
-	<?php }elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'registrado') { ?>
+	<?php }elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'postear') { ?>
 	<script>
-		alert("Registro el id");
+		alert("Tu comentario ha sido guardado");
 	</script>
-	<?php } ?>
+	<?php }elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'nopostear') { ?>
+	<script>
+		alert("Tu comentario no pudo ser posteado");
+	</script>
+	<?php } ?> 
 </body>
 </html>

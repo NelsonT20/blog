@@ -11,7 +11,7 @@
 		if ($connection->connect_error) {
 			die("Conection failed: " . $connection->connect_error);
 		} else {
-			echo "Connected";
+			
 			return $connection;
 		} 
 	}

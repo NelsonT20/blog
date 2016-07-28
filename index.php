@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php include("module/conexion.php");
+		$connection = connectDatabase();
+		session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +15,7 @@
 	<title>Document</title>
 </head>
 <body>
+
 	<nav class="row padding-largo nav-color text-center">
 		<ul class="no-lista">
 			<?php if(!(isset($_SESSION['user']))){ ?> 
@@ -35,9 +40,22 @@
 	</div>
 
 		<div class="col-md-6" id="div-principal">
-			<textarea name="" cols="48" rows="6"></textarea>
-			<p class="color2"></a></p>
+			<h1 class="color2 pacifico text-center">Historial</h1>
+			<?php 
+				$sqlQuery = "SELECT * FROM comentario";
+				$result = $connection->query($sqlQuery);
+				while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+					echo '<div>';
+						echo '<h1><a href="viewpost.php?id='.$row['id_comentario'].'">'.$row['titulo'].'</a></h1>';
+						echo '<p>Posted on '.date('jS M Y ', strtotime($row['fecha'])).'</p>';
+						echo '<p>'.$row['texto'].'</p>';				
+						echo '<p><a href="viewpost.php?id='.$row['id_comentario'].'">Read More</a></p>';
+					echo '</div>';
+				}
+
+			 ?>
 		</div>
+
 		<div class="col-md-4" id="div-secundario">
 			<h1 class="color pacifico text-center">My blog</h1> <br>
 			<p>My blog ha sido creado por Nelson Torres</p> <br>
