@@ -83,15 +83,17 @@ div{
 	margin-top: 10px;
 }
 #Fecha{
-	margin-top: 5px;
+	margin-top: 10px;
 	float: none;
 	margin-left: -15px;
-	width: 200px;
+	width: 280px;
 	border-radius:4px;
 	box-shadow: 2px 2px 5px #999;
 }
 #postear{
+	margin-top: 10px;
 	background:#0AC986;
+	height: 50px;
     border-radius:4px;
     color: #eee;
 	box-shadow: 2px 2px 5px #999;
@@ -99,4 +101,5 @@ div{
 .textarea{
 	box-shadow: 2px 2px 5px #999;
 	border-radius:4px;
+	height: 200px;
 }

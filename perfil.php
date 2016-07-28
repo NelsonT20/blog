@@ -36,12 +36,13 @@
 
 		<div class="col-md-6" id="div-principal">
 			<form action="module/insert.php" method="post">
-				<textarea name="Text" cols="48" rows="6" class="textarea"></textarea>
-				<div class="col-md-10">
-					<input type="date" name="Fecha" id="Fecha" step="1" min="2013-01-01" max="2013-12-31" value="<?php echo date("Y-m-d");?>">
+				<input type="text" name="texto" maxlength="240" size="50" class="textarea">
+				
+				<div class="col-md-9">
+					<input type="date" name="fecha" id="Fecha" step="1" min="2016-01-01" max="2020-12-31" value="<?php echo date("Y-m-d");?>">
 				</div>
 				<div class="col-md-2">
-					<button type="submit" class="btn btn-default" id="postear">Postear</button>
+					<button type="submit" class="btn btn-default" id="postear">COMENTAR</button>
 				</div>
 			</form>
 		</div>
