@@ -35,6 +35,9 @@
 	</div>
 
 		<div class="col-md-6" id="div-principal">
+			<div class="text-center">
+				<h1 class="color2">Comentar</h1>
+			</div>
 			<form action="module/insert.php" method="post">
 				<input type="text" name="titulo" placeholder="Titulo">
 				<textarea name="texto" type="texto" maxlength="240" cols="48" rows="10" class="textarea"></textarea>
@@ -49,8 +52,30 @@
 		</div>
 		<div class="col-md-4" id="div-secundario">
 			<h1 class="color2 pacifico text-center">My blog</h1> <br>
-			<p class="color2"> NickName: <?php echo $_SESSION['user']; ?></p>
+			<p class="color2"> NickName: <?php echo $_SESSION['user']; ?></p> <br>
+			<a data-toggle="modal" data-target="#myModal" class="color2">Cambiar Contraseña</a>
 			
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Cambiar Contraseña</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form action="" class="form-horizontal">
+			        	<input type="password" class="form-control pass" placeholder="Ingrese la contraseña actual">
+			        	<input type="password" class="form-control pass" placeholder="Ingrese la contraseña nueva">
+			        	<input type="password" class="form-control pass" placeholder="Repita la contraseña nueva">
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 		</div>	
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
