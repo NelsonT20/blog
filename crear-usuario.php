@@ -40,18 +40,6 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Ingrese su nombre</label>
-			<div class="col-lg-5 col-xs-4 col-sm-4">
-				<input type="text" name="Name" class="form-control" required placeholder="Ingrese su nombre" maxlength="15">
-			</div>
-		</div>
-		<div class="form-group">
-				<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Ingrese su apellido</label>
-			<div class="col-lg-5 col-xs-4 col-sm-4">
-				<input type="text" name="LastName" class="form-control" required placeholder="Ingrese su apellido" maxlength="15">
-			</div>
-		</div>
-		<div class="form-group">
 			<label class="col-lg-5 control-label col-xs-4 col-sm-4 color2">Email</label>
 			<div class="col-lg-5 col-xs-4 col-sm-4">
 				<input type="email" name="Email" class="form-control" required placeholder="Ingrese su email" maxlength="50">
