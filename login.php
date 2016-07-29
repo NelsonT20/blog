@@ -52,7 +52,6 @@
 	       <input type="password" class="form-control" placeholder="Password" required name="password" id="Passwod">
 	       <i class="fa fa-lock"></i>
 	     </div>
-	      <a class="link" href="#">Lost your password?</a>
 	     <button type="submit" class="log-btn" >Log in</button>
 	     
 	    

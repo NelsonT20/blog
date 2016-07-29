@@ -25,7 +25,7 @@
 			<div class="dropdown col-md-4 ">
 			<button class="btn dropdown-toggle pacifico color boton" type="button" data-toggle="dropdown">Iniciar Sesion
   				<span class="caret"></span></button>
-  				<ul class="dropdown-menu dropdown-menu-right">
+  				<ul class="dropdown-menu">
 				    <li><a href="login.php">Iniciar sesion</a></li>
 				    <li><a href="module/logout.php">Cerrar sesion</a></li>
 				</ul>

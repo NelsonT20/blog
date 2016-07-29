@@ -40,7 +40,7 @@
 			</div>
 			<form action="module/insert.php" method="post">
 				<input type="text" name="titulo" placeholder="Titulo">
-				<textarea name="texto" type="texto" maxlength="240" cols="48" rows="10" class="textarea"></textarea>
+				<textarea name="texto" type="texto" maxlength="500" cols="48" rows="10" class="textarea"></textarea>
 				<div class="col-md-9">
 					<input type="date" name="fecha" id="Fecha" step="1" min="2016-01-01" max="2020-12-31" value="<?php echo date("Y-m-d");?>">
 				</div>
@@ -60,19 +60,20 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">Cambiar Contraseña</h4>
+			        <h4 class="modal-title color2" id="myModalLabel">Cambiar Contraseña</h4>
 			      </div>
 			      <div class="modal-body">
-			        <form action="" class="form-horizontal">
-			        	<input type="password" class="form-control pass" placeholder="Ingrese la contraseña actual">
-			        	<input type="password" class="form-control pass" placeholder="Ingrese la contraseña nueva">
-			        	<input type="password" class="form-control pass" placeholder="Repita la contraseña nueva">
+
+			        <form action="module/password.php" method="post" class="form-horizontal">
+			        	<input type="password" name="oldpass" class="form-control pass" placeholder="Ingrese la contraseña actual">
+			        	<input type="password" name="newpass" class="form-control pass" placeholder="Ingrese la contraseña nueva">
+			        	<input type="password" name="repass"  class="form-control pass" placeholder="Repita la contraseña nueva">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			       		 <button type="submit" class="btn btn-primary">Save changes</button>
 			        </form>
+
 			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary">Save changes</button>
-			      </div>
+			     
 			    </div>
 			  </div>
 			</div>
@@ -93,6 +94,18 @@
 	<script>
 		alert("Tu comentario no pudo ser posteado");
 	</script>
-	<?php } ?> 
+	<?php }elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'cambiolisto') { ?>
+	<script>
+		alert("La contraseña ha sido cambiada");
+	</script>
+	<?php }elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'errorpasvieja') { ?>
+	<script>
+		alert("La contraseña actual no es la correcta");
+	</script>
+	<?php }elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'errorpasnueva') { ?>
+	<script>
+		alert("Las contraseñas nuevas no coinciden");
+	</script>
+	<?php } ?>  
 </body>
 </html>
